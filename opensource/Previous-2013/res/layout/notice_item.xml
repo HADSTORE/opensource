@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100px"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="5"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="70"
+    	android:orientation="horizontal">
+        <TextView
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="5" />
+        <TextView
+            android:id="@+id/notice_num"
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="60"
+    		android:gravity="center"
+    		android:text="1000"/>
+        <TextView
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="5" />
+        <LinearLayout 
+            android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="405"
+    		android:orientation="vertical">
+    		<View
+    		    android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="10" />
+            <TextView 
+                android:id="@+id/notice_title"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="50"
+		    	android:gravity="center_vertical"
+		    	android:singleLine="true"
+		    	android:text="apptitle"/>
+            <View
+    		    android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="10" />
+            <TextView 
+                android:id="@+id/notice_date"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="30"
+		    	android:gravity="center_vertical"
+		    	android:text="2013.06.05"/>
+        </LinearLayout>
+        <TextView
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="5" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="5" />
+</LinearLayout>

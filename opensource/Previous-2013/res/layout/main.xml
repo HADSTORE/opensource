@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/hd_main"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	android:background="#ffffff">
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/had_info_land"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:visibility="gone"
+    	android:orientation="vertical">
+        <View 
+            android:layout_weight="374"
+            android:layout_width="fill_parent"
+    		android:layout_height="0dp"/>
+        <TextView 
+            android:id="@+id/had_info"
+            android:layout_weight="30"
+            android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:gravity="center|bottom"
+    		android:textStyle="bold"
+    		android:text="HAD Family all rights reserved @2012"
+    		android:textColor="#66bebebe"
+    		android:textSize="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/had_info"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical">
+        <View 
+            android:layout_weight="696"
+            android:layout_width="fill_parent"
+    		android:layout_height="0dp"/>
+        <TextView 
+            android:id="@+id/had_info"
+            android:layout_weight="30"
+            android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:gravity="center|bottom"
+    		android:textStyle="bold"
+    		android:text="HAD Family all rights reserved @2012"
+    		android:textColor="#66bebebe"
+    		android:textSize="10dp"
+            />
+    </LinearLayout>
+</FrameLayout>

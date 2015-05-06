@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/main_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <!-- top size 비율 642 -->
+		<LinearLayout 
+		    android:id="@+id/search_option"
+		    android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:orientation="vertical">
+		    <include layout="@layout/search_option" />
+		</LinearLayout>
+		<!-- search size 비율 82 -->
+		<LinearLayout 
+		    android:id="@+id/main_search"
+		    android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:orientation="vertical">
+		   <View 
+		        android:layout_weight="3"
+		        android:layout_height="0dp"
+		    	android:layout_width="fill_parent"/>
+		    <LinearLayout 
+		        android:layout_weight="75"
+			    android:layout_height="0dp"
+			    android:layout_width="fill_parent"
+			    android:orientation="horizontal">
+			    <View 
+			        android:layout_weight="65"
+			        android:layout_height="fill_parent"
+			        android:background="@drawable/mobile_search_log"
+			    	android:layout_width="0dp"/>
+		    	<TextView 
+		    	    android:id="@+id/search_bar"
+		    	    android:layout_weight="365"
+		    	    android:layout_height="fill_parent"
+			    	android:layout_width="0dp"
+			    	android:textColor="#000000"
+			    	android:gravity="center_vertical" 
+			    	android:text="검색어 또는 URL"
+			    	android:paddingLeft="10dp"
+			    	android:background="@drawable/mobile_search_textbox"/>
+		    	<View 
+		    	    android:id="@+id/option_btn"
+		    	    android:layout_weight="60"
+		    	    android:layout_height="fill_parent"
+		    	    android:background="@drawable/mobile_search_down"
+			    	android:layout_width="0dp"/>
+		    </LinearLayout>
+		    <View
+		        android:layout_weight="4"
+		        android:layout_height="0dp"
+		    	android:layout_width="fill_parent" />
+		</LinearLayout>
+		<!-- middel size 비율 642 -->
+		<LinearLayout 
+		    android:id="@+id/main_bottom"
+		    android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:orientation="vertical">
+		    <include layout="@layout/layout_main_middel" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

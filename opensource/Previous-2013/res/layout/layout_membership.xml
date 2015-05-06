@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    <View 
+	    android:layout_weight="10"
+	    android:layout_width="0dp"
+   		android:layout_height="fill_parent"/>
+    <LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="460"
+	    android:orientation="vertical" >
+		<View 
+		    android:layout_weight="20"
+		    android:layout_width="fill_parent"
+	   		android:layout_height="0dp"/>
+		<ScrollView 
+		    android:layout_weight="554"
+		    android:layout_width="fill_parent"
+	   		android:layout_height="0dp">
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+		   		android:layout_height="wrap_content"
+		    	android:orientation="vertical" >
+		    	<include layout="@layout/list_item" android:id="@+id/research_list"/>
+		    	<include layout="@layout/membership_research" android:id="@+id/research"/>
+		    	<include layout="@layout/list_item" android:id="@+id/preferences_list"/>
+		    	<LinearLayout 
+		    	    android:id="@+id/preferences"
+				    android:layout_width="fill_parent"
+			   		android:layout_height="wrap_content"
+			   		android:background="@drawable/search_bar_back"
+			    	android:orientation="vertical"
+			    	android:visibility="gone" >
+			    	<CheckBox 
+			    	    android:id="@+id/preferences_auto_login"
+			    	    android:layout_width="fill_parent"
+			    	    android:layout_height="wrap_content"
+			    	    android:textColor="#ff000000"
+			    	    android:text="자동 로그인"
+			    	    />
+			    	<CheckBox 
+			    	    android:id="@+id/preferences_bookmark_auto"
+			    	    android:layout_width="fill_parent"
+			    	    android:layout_height="wrap_content"
+			    	    android:textColor="#ff000000"
+			    	    android:text="Down시 자동 즐겨찾기 추가"
+			    	    />
+			    	<CheckBox 
+			    	     android:id="@+id/preferences_bookmark_share"
+			    	    android:layout_width="fill_parent"
+			    	    android:layout_height="wrap_content"
+			    	    android:textColor="#ff000000"
+			    	    android:text="즐겨찾기 공유 허용"
+			    	    />
+		        </LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+		<TextView 
+		    android:id="@+id/app_version"
+		    android:layout_weight="100"
+		    android:layout_width="fill_parent"
+	   		android:layout_height="0dp"
+	   		android:gravity="center"
+	   		android:textSize="18sp"
+	   		android:textColor="@android:color/black"
+	   		android:text="Hadstore version"
+		    />
+		<View 
+		    android:layout_weight="50"
+		    android:layout_width="fill_parent"
+	   		android:layout_height="0dp"/>
+	</LinearLayout>
+	<View 
+	    android:layout_weight="10"
+	    android:layout_width="0dp"
+   		android:layout_height="fill_parent"/>
+</LinearLayout>

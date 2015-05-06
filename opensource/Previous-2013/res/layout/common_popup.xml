@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00ffffff"
+    android:orientation="horizontal" 
+    android:gravity="center">
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+	    <ProgressBar
+			android:layout_height="80dp" android:layout_width="80dp" />
+	    <!-- 페센테이지% -->
+	    <TextView
+	        android:id="@+id/percent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        />
+	    <!-- Loading or Downloading... -->
+	    <TextView
+	        android:id="@+id/text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    <!-- 음악 다운로드시 제목용 -->
+	    <TextView
+	        android:paddingLeft="30dp"
+	        android:paddingRight="30dp"
+	        android:id="@+id/subtext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

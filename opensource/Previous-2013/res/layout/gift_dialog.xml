@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350px"
+    android:layout_height="500px"
+    android:orientation="vertical"
+    android:background="@drawable/search_bar_back"  >
+    <ScrollView 
+         android:layout_width="fill_parent"
+    	 android:layout_height="fill_parent"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical">
+    		<LinearLayout 
+	            android:id="@+id/gift_dialog_main"
+	            android:layout_width="fill_parent"
+	    		android:layout_height="500px"
+	    		android:orientation="vertical">
+	    		<TextView 
+			        android:layout_weight="40"
+			        android:text="* 받는 사람 정보"
+			        android:textColor="#9C9CDF"
+			        android:gravity="center_vertical"
+		        	android:layout_width="fill_parent"
+		    		android:layout_height="0dp" />
+			    <LinearLayout 
+			        android:layout_weight="1"
+		        	android:layout_width="fill_parent"
+		    		android:layout_height="0dp"
+		    		android:orientation="horizontal">
+		        	 <View
+				        android:layout_weight="20"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent"  />
+				    <View
+				        android:layout_weight="310"
+				        android:background="#aabebebe"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent"  />
+				     <View
+				        android:layout_weight="20"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent"  />
+			    </LinearLayout>
+			    <View
+			        android:layout_weight="10"
+		        	android:layout_width="fill_parent"
+		    		android:layout_height="0dp"  />
+	            <LinearLayout 
+			        android:layout_weight="190"
+		        	android:layout_width="fill_parent"
+		    		android:layout_height="0dp"
+		    		android:orientation="horizontal">
+		    		<View
+		                android:layout_weight="10"
+		       			android:layout_width="0dp"
+		   				android:layout_height="fill_parent" />
+			        <LinearLayout 
+			            android:layout_weight="330"
+		        		android:layout_width="0dp"
+		    			android:layout_height="fill_parent"
+		    			android:orientation="vertical">
+			            <View
+			                android:layout_weight="10"
+		        			android:layout_width="fill_parent"
+		    				android:layout_height="0dp" />
+			            <LinearLayout 
+				            android:layout_weight="35"
+			        		android:layout_width="fill_parent"
+			    			android:layout_height="0dp"
+			    			android:orientation="horizontal">
+			    			 <TextView 
+						        android:layout_weight="120"
+						        android:text="App 명"
+						        android:textColor="#9C9CDF"
+						        android:gravity="center_vertical"
+					        	android:layout_width="0dp"
+					        	android:textSize="10sp"
+					    		android:layout_height="fill_parent" />
+			    			<TextView
+					    	    android:id="@+id/gift_dialog_appname"
+					    	    android:layout_width="0dp"
+					    		android:layout_height="fill_parent"
+					    		android:gravity="center_vertical"
+					    		android:layout_weight="210"
+					    		android:singleLine="true"
+					    		android:textSize="12sp"
+					    		/>
+		    			</LinearLayout>
+			            <View
+			                android:layout_weight="5"
+		        			android:layout_width="fill_parent"
+		    				android:layout_height="0dp" />
+			             <LinearLayout 
+				            android:layout_weight="35"
+			        		android:layout_width="fill_parent"
+			    			android:layout_height="0dp"
+			    			android:orientation="horizontal">
+			    			 <TextView 
+						        android:layout_weight="120"
+						        android:text="ID(전화번호)"
+						        android:textColor="#9C9CDF"
+						        android:gravity="center_vertical"
+					        	android:layout_width="0dp"
+					        	android:textSize="10sp"
+					    		android:layout_height="fill_parent" />
+			    			 <EditText
+					    	    android:id="@+id/gift_dialog_id"
+					    	    android:layout_width="0dp"
+					    		android:layout_height="fill_parent"
+					    		android:gravity="center_vertical"
+					    		android:layout_weight="160"
+					    		android:textSize="10sp"
+					    		android:background="@drawable/search_bar_back" />
+			    			 <TextView
+					    	    android:id="@+id/gift_dialog_check"
+					    	    android:layout_width="0dp"
+					    		android:layout_height="fill_parent"
+					    		android:gravity="center"
+					    		android:layout_weight="50"
+					    		android:textSize="10sp"
+					    		android:text="검색"
+					    		android:textColor="#000000"
+					    		android:background="#D1D1F0"/>
+			    			 
+		    			</LinearLayout>
+			            <View
+			                android:layout_weight="5"
+		        			android:layout_width="fill_parent"
+		    				android:layout_height="0dp" />
+			             <LinearLayout 
+				            android:layout_weight="35"
+			        		android:layout_width="fill_parent"
+			    			android:layout_height="0dp"
+			    			android:orientation="horizontal">
+			    			 <TextView 
+						        android:layout_weight="120"
+						        android:text="닉네임"
+						        android:textColor="#9C9CDF"
+						        android:gravity="center_vertical"
+					        	android:layout_width="0dp"
+					        	android:textSize="10sp"
+					    		android:layout_height="fill_parent" />
+			    			 <TextView
+					    	    android:id="@+id/gift_dialog_nickname"
+					    	    android:layout_width="0dp"
+					    		android:layout_height="fill_parent"
+					    		android:gravity="center_vertical"
+					    		android:layout_weight="210"
+					    		android:textSize="12sp"
+					    		android:background="@drawable/text_box_back"/>
+		    			</LinearLayout>
+		    			 <View
+			                android:layout_weight="5"
+		        			android:layout_width="fill_parent"
+		    				android:layout_height="0dp" />
+			             <LinearLayout 
+				            android:layout_weight="65"
+			        		android:layout_width="fill_parent"
+			    			android:layout_height="0dp"
+			    			android:orientation="horizontal">
+			    			 <TextView 
+						        android:layout_weight="120"
+						        android:text="메시지"
+						        android:textColor="#9C9CDF"
+						        android:gravity="center_vertical"
+					        	android:layout_width="0dp"
+					        	android:textSize="12sp"
+					    		android:layout_height="fill_parent" />
+			    			 <EditText
+					    	    android:id="@+id/gift_dialog_msg"
+					    	    android:layout_width="0dp"
+					    		android:layout_height="fill_parent"
+					    		android:gravity="center_vertical"
+					    		android:layout_weight="210"
+					    		android:textSize="12sp"
+					    		android:background="@drawable/search_bar_back" />
+		    			</LinearLayout>
+			            <View
+			                android:layout_weight="10"
+		        			android:layout_width="fill_parent"
+		    				android:layout_height="0dp" />
+		        	</LinearLayout>
+		        	<View
+		                android:layout_weight="10"
+	        			android:layout_width="0dp"
+	    				android:layout_height="fill_parent" />
+		    	</LinearLayout>
+		    	<View
+		        android:layout_weight="43"
+	        	android:layout_width="fill_parent"
+	    		android:layout_height="0dp"  />
+		    	<TextView 
+			        android:layout_weight="40"
+			        android:text="* 차감 포인트 정보"
+			        android:textColor="#9C9CDF"
+			        android:gravity="center_vertical"
+		        	android:layout_width="fill_parent"
+		    		android:layout_height="0dp" />
+		    	<LinearLayout 
+			        android:layout_weight="1"
+		        	android:layout_width="fill_parent"
+		    		android:layout_height="0dp"
+		    		android:orientation="horizontal">
+		        	 <View
+				        android:layout_weight="20"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent"  />
+				    <View
+				        android:layout_weight="310"
+				        android:background="#aabebebe"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent"  />
+				     <View
+				        android:layout_weight="20"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent"  />
+			    </LinearLayout>
+			    <View
+			        android:layout_weight="10"
+		        	android:layout_width="fill_parent"
+		    		android:layout_height="0dp"  />
+			    <LinearLayout 
+			        android:layout_weight="105"
+		        	android:layout_width="fill_parent"
+		    		android:layout_height="0dp"
+		    		android:orientation="horizontal">
+		        	<View
+		                android:layout_weight="10"
+		       			android:layout_width="0dp"
+		   				android:layout_height="fill_parent" />
+			        <LinearLayout 
+			            android:layout_weight="330"
+		        		android:layout_width="0dp"
+		    			android:layout_height="fill_parent"
+		    			android:orientation="vertical">
+			            <View
+			                android:layout_weight="10"
+		        			android:layout_width="fill_parent"
+		    				android:layout_height="0dp" />
+			            <LinearLayout 
+				            android:layout_weight="35"
+			        		android:layout_width="fill_parent"
+			    			android:layout_height="0dp"
+			    			android:orientation="horizontal">
+			    			 <TextView 
+						        android:layout_weight="120"
+						        android:text="보유 포인트"
+						        android:textColor="#9C9CDF"
+						        android:gravity="center_vertical"
+					        	android:layout_width="0dp"
+					        	android:textSize="10sp"
+					    		android:layout_height="fill_parent" />
+			    			 <TextView
+					    	    android:id="@+id/gift_dialog_my_point"
+					    	    android:layout_width="0dp"
+					    		android:layout_height="fill_parent"
+					    		android:gravity="center_vertical"
+					    		android:layout_weight="210"
+					    		android:textSize="10sp"
+					    		android:background="@drawable/text_box_back"/>
+		    			</LinearLayout>
+			            <View
+			                android:layout_weight="5"
+		        			android:layout_width="fill_parent"
+		    				android:layout_height="0dp" />
+			            <LinearLayout 
+				            android:layout_weight="35"
+			        		android:layout_width="fill_parent"
+			    			android:layout_height="0dp"
+			    			android:orientation="horizontal">
+			    			 <TextView 
+						        android:layout_weight="120"
+						        android:text="차감 포인트"
+						        android:textColor="#9C9CDF"
+						        android:gravity="center_vertical"
+					        	android:layout_width="0dp"
+					        	android:textSize="10sp"
+					    		android:layout_height="fill_parent" />
+			    			 <TextView
+					    	    android:id="@+id/gift_dialog_pay"
+					    	    android:layout_width="0dp"
+					    		android:layout_height="fill_parent"
+					    		android:gravity="center_vertical"
+					    		android:layout_weight="210"
+					    		android:textSize="10sp"
+					    		android:background="@drawable/text_box_back"/>
+		    			</LinearLayout>
+		    			<View
+			                android:layout_weight="20"
+		        			android:layout_width="fill_parent"
+		    				android:layout_height="0dp" />
+		            </LinearLayout>
+		            <View
+		                android:layout_weight="10"
+		       			android:layout_width="0dp"
+		   				android:layout_height="fill_parent" />
+			        </LinearLayout>
+			        <LinearLayout 
+				        android:layout_weight="40"
+			        	android:layout_width="fill_parent"
+			    		android:layout_height="0dp"
+			    		android:orientation="horizontal">
+			            <View
+			                android:layout_weight="50"
+			       			android:layout_width="0dp"
+			   				android:layout_height="fill_parent" />
+		    			 <TextView 
+		    			    android:id="@+id/gift_dialog_ok"
+					        android:layout_weight="100"
+					        android:text="확인"
+					        android:textColor="#ffffff"
+					        android:gravity="center"
+				        	android:layout_width="0dp"
+				        	android:textSize="12sp"
+				    		android:layout_height="fill_parent" 
+				    		android:background="#4D4D4D"/>
+		    			 <View
+			                android:layout_weight="50"
+			       			android:layout_width="0dp"
+			   				android:layout_height="fill_parent" />
+		    			 <TextView
+				    	    android:id="@+id/gift_dialog_cancel"
+				    	    android:layout_width="0dp"
+				    	    android:textColor="#ffffff"
+				    		android:layout_height="fill_parent"
+				    		android:gravity="center"
+				    		android:layout_weight="100"
+				    		android:textSize="12sp"
+				    		android:text="취소"
+				    		android:background="#4D4D4D"/>
+			            <View
+			                android:layout_weight="50"
+			       			android:layout_width="0dp"
+			   				android:layout_height="fill_parent" />
+			       </LinearLayout>
+			       <View
+		                android:layout_weight="10"
+		       			android:layout_width="fill_parent"
+		   				android:layout_height="0dp" />
+	       	</LinearLayout>
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

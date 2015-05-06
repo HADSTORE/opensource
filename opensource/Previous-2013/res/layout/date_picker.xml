@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"  >
+   <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+	   android:layout_height="fill_parent">
+	   <View
+	       android:layout_width="0dp"
+	   	   android:layout_height="fill_parent"
+	   	   android:layout_weight="45"
+	       />
+	   <com.android.hadstore.NumberPicker 
+	       android:id="@+id/date_year"
+	       android:layout_width="0dp"
+	   	   android:layout_height="fill_parent"
+	   	   android:layout_weight="188"/>
+	   <com.android.hadstore.NumberPicker 
+	       android:id="@+id/date_month"
+	       android:layout_width="0dp"
+	   	   android:layout_height="fill_parent"
+	   	   android:layout_weight="188"/>
+	   <com.android.hadstore.NumberPicker 
+	       android:id="@+id/date_day"
+	       android:layout_width="0dp"
+	   	   android:layout_height="fill_parent"
+	   	   android:layout_weight="188"/>
+	   <View
+	       android:layout_width="0dp"
+	   	   android:layout_height="fill_parent"
+	   	   android:layout_weight="44"
+	       />
+   </LinearLayout>
+</merge> 

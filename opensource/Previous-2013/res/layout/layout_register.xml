@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    <View 
+        android:layout_weight="10"
+        android:layout_width="0dp"
+    	android:layout_height="fill_parent" />
+    <LinearLayout
+       	android:layout_weight="460"
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical">
+	    <View
+	        android:layout_weight="15"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <TextView 
+	        android:layout_weight="60"
+	        android:text="일반 회원 가입"
+	        android:textColor="#9C9CDF"
+	        android:gravity="center_vertical"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp" />
+	    <View
+	        android:layout_weight="1"
+	        android:background="#aabebebe"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <View
+	        android:layout_weight="10"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <LinearLayout 
+	        android:layout_weight="170"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:orientation="horizontal">
+	        <LinearLayout 
+	            android:layout_weight="430"
+        		android:layout_width="0dp"
+    			android:layout_height="fill_parent"
+    			android:orientation="vertical">
+	            <View
+	                android:layout_weight="20"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	            <LinearLayout 
+		            android:layout_weight="40"
+	        		android:layout_width="fill_parent"
+	    			android:layout_height="0dp"
+	    			android:orientation="horizontal">
+	    			 <TextView 
+				        android:layout_weight="150"
+				        android:text="회원 ID"
+				        android:textColor="#9C9CDF"
+				        android:gravity="center_vertical"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent" />
+	    			 <EditText
+			    	    android:id="@+id/register_id"
+			    	    android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:gravity="center_vertical"
+			    		android:layout_weight="200"
+			    		android:textSize="12sp"
+			    		android:singleLine="true"
+			    		android:text=""
+			    		android:background="@drawable/search_bar_back" />
+	    			 <Button
+			    	    android:id="@+id/register_id_check"
+			    	    android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:gravity="center"
+			    		android:layout_weight="80"
+			    		android:textSize="10sp"
+			    		android:text="check"/>
+    			</LinearLayout>
+	            <View
+	                android:layout_weight="5"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	             <LinearLayout 
+		            android:layout_weight="40"
+	        		android:layout_width="fill_parent"
+	    			android:layout_height="0dp"
+	    			android:orientation="horizontal">
+	    			 <TextView 
+				        android:layout_weight="150"
+				        android:text="비밀번호"
+				        android:textColor="#9C9CDF"
+				        android:gravity="center_vertical"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent" />
+	    			 <EditText
+			    	    android:id="@+id/register_pw"
+			    	    android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:gravity="center_vertical"
+			    		android:layout_weight="280"
+			    		android:password="true"
+			    		android:singleLine="true"
+			    		android:background="@drawable/search_bar_back" />
+    			</LinearLayout>
+	            <View
+	                android:layout_weight="5"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	             <LinearLayout 
+		            android:layout_weight="40"
+	        		android:layout_width="fill_parent"
+	    			android:layout_height="0dp"
+	    			android:orientation="horizontal">
+	    			 <TextView 
+				        android:layout_weight="150"
+				        android:text="비밀번호 확인"
+				        android:textColor="#9C9CDF"
+				        android:gravity="center_vertical"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent" />
+	    			 <EditText
+			    	    android:id="@+id/register_pw_re"
+			    	    android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:gravity="center_vertical"
+			    		android:layout_weight="280"
+			    		android:password="true"
+			    		android:singleLine="true"
+			    		android:background="@drawable/search_bar_back" />
+    			</LinearLayout>
+	            <View
+	                android:layout_weight="10"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	        </LinearLayout>
+	        <View
+	            android:layout_weight="50"
+        		android:layout_width="0dp"
+    			android:layout_height="fill_parent" />
+	    </LinearLayout>
+	    <View
+	        android:layout_weight="10"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <TextView 
+	        android:layout_weight="30"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:textColor="#B3B3B3"
+    		android:textSize="8sp"
+    		android:gravity="center_vertical"
+    		android:text="* 8자리 이상의 대 소 문자 조합을 입력하세요"/>
+	    <View
+	        android:layout_weight="5"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	     <LinearLayout 
+	        android:layout_weight="270"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:orientation="horizontal">
+	        <LinearLayout 
+	            android:layout_weight="430"
+        		android:layout_width="0dp"
+    			android:layout_height="fill_parent"
+    			android:orientation="vertical">
+	            <View
+	                android:layout_weight="10"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	            <LinearLayout 
+		            android:layout_weight="35"
+	        		android:layout_width="fill_parent"
+	    			android:layout_height="0dp"
+	    			android:orientation="horizontal">
+	    			 <TextView 
+				        android:layout_weight="150"
+				        android:text="회원 명"
+				        android:textColor="#9C9CDF"
+				        android:gravity="center_vertical"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent" />
+	    			 <EditText
+			    	    android:id="@+id/register_name"
+			    	    android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:gravity="center_vertical"
+			    		android:layout_weight="280"
+			    		android:singleLine="true"
+			    		android:background="@drawable/search_bar_back" />
+    			</LinearLayout>
+	            <View
+	                android:layout_weight="5"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	             <LinearLayout 
+		            android:layout_weight="35"
+	        		android:layout_width="fill_parent"
+	    			android:layout_height="0dp"
+	    			android:orientation="horizontal">
+	    			 <TextView 
+				        android:layout_weight="150"
+				        android:text="E-Mail"
+				        android:textColor="#9C9CDF"
+				        android:gravity="center_vertical"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent" />
+	    			 <EditText
+			    	    android:id="@+id/register_mail"
+			    	    android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:gravity="center_vertical"
+			    		android:textSize="10sp"
+			    		android:layout_weight="280"
+			    		android:singleLine="true"
+			    		android:background="@drawable/search_bar_back" />
+    			</LinearLayout>
+	            <View
+	                android:layout_weight="5"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	             <LinearLayout 
+		            android:layout_weight="55"
+	        		android:layout_width="fill_parent"
+	    			android:layout_height="0dp"
+	    			android:orientation="horizontal">
+	    			 <TextView 
+				        android:layout_weight="150"
+				        android:text="성별"
+				        android:textColor="#9C9CDF"
+				        android:gravity="center_vertical"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent" />
+	    			 <RadioButton
+			    	    android:id="@+id/register_man"
+			    	    android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:gravity="center_vertical"
+			    		android:text="남자"
+			    		android:textColor="@android:color/black"
+			    		android:layout_weight="140" />
+	    			 <RadioButton
+			    	    android:id="@+id/register_women"
+			    	    android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:gravity="center_vertical"
+			    		android:textColor="@android:color/black"
+			    		android:text="여자"
+			    		android:layout_weight="140"/>
+    			</LinearLayout>
+    			<View
+	                android:layout_weight="5"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	             <LinearLayout 
+		            android:layout_weight="110"
+	        		android:layout_width="fill_parent"
+	    			android:layout_height="0dp"
+	    			android:orientation="horizontal">
+	    			 <TextView 
+				        android:layout_weight="150"
+				        android:text="생년원일"
+				        android:textColor="#9C9CDF"
+				        android:gravity="center_vertical"
+			        	android:layout_width="0dp"
+			    		android:layout_height="fill_parent" />
+	    			 <com.android.hadstore.CustomDatePicker
+	   					android:id="@+id/date_picker"
+	  					android:layout_width="0dp"
+			    		android:layout_height="fill_parent"
+			    		android:layout_weight="280" />
+    			</LinearLayout>
+	            <View
+	                android:layout_weight="10"
+        			android:layout_width="fill_parent"
+    				android:layout_height="0dp" />
+	        </LinearLayout>
+	        <View
+	            android:layout_weight="50"
+        		android:layout_width="0dp"
+    			android:layout_height="fill_parent" />
+	    </LinearLayout>
+	    <View
+	        android:layout_weight="30"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <Button
+	        android:id="@+id/register_agree"
+	        android:layout_weight="60" 
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:text="확인"
+    		android:textColor="#9C9CDF"
+    		android:textSize="15sp"
+    		android:gravity="center"
+    		android:background="#D1D1F0"
+	        />
+	    <View
+	        android:layout_weight="63"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	</LinearLayout>
+	<View 
+	    android:layout_weight="10"
+        android:layout_width="0dp"
+    	android:layout_height="fill_parent" />
+</LinearLayout>
