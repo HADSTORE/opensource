@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="customTitleTheme" parent="android:Theme.Black">
+		<item name="android:windowTitleBackgroundStyle">@style/WindowTitlebarBackground</item>
+	</style>
+</resources>

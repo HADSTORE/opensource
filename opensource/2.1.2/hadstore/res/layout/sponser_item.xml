@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="140px"
+    android:orientation="vertical" >
+     <View
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+  		android:layout_weight="10"
+        />
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="120"
+	    android:orientation="horizontal" >
+	    <ImageView
+	        android:id="@+id/sponser_img"
+	        android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="120"
+			android:background="@drawable/list_defimg"
+	      />
+	    <View
+	        android:layout_width="0dp"
+	  		android:layout_height="fill_parent"
+	  		android:layout_weight="20"
+	        />
+	    <LinearLayout 
+	        android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="320"
+	   		android:orientation="vertical">
+	       <TextView 
+	            android:id="@+id/sponser_cnt"
+		        android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:gravity="center_vertical"
+				android:layout_weight="1"/>
+	       <TextView
+	            android:id="@+id/sponser_name"
+	            android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:gravity="center_vertical"
+				android:layout_weight="1" />
+	    </LinearLayout>
+    </LinearLayout>
+     <View
+        android:layout_width="fill_parent"
+   		android:layout_height="0dp"
+  		android:layout_weight="10"
+        />
+ </LinearLayout>

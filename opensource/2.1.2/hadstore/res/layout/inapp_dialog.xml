@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="#88000000"  >
+    <View 
+        android:layout_weight="104"
+        android:layout_width="0dp"
+    	android:layout_height="fill_parent"/>
+    <LinearLayout
+        android:layout_weight="513"
+        android:layout_width="0dp"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical" >
+	    <View 
+	        android:layout_weight="439"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="0dp"/>
+	    <LinearLayout
+	        android:layout_weight="351"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="0dp"
+	    	android:orientation="vertical"
+	    	android:background="@drawable/point_pop_bg" >
+	    	<View 
+	    	    android:layout_width="fill_parent"
+		    	android:layout_height="0dp" 
+		    	android:layout_weight="4" />
+		    <TextView 
+		        android:text="알림"
+		        android:gravity="center"
+	    	    android:layout_width="fill_parent"
+		    	android:layout_height="0dp" 
+		    	android:layout_weight="72" 
+		    	android:textSize="20sp"
+		    	android:textColor="#ff000000"/>
+		     <TextView 
+		        android:text="결제가 완료 되었습니다."
+		        android:gravity="center"
+	    	    android:layout_width="fill_parent"
+		    	android:layout_height="0dp" 
+		    	android:layout_weight="172" 
+		    	android:textColor="#ff000000"/>
+		     <LinearLayout
+		        android:layout_weight="57"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:orientation="horizontal">
+		    	<View 
+		    	    android:layout_width="0dp"
+			    	android:layout_height="fill_parent" 
+			    	android:layout_weight="106" />
+			    <View 
+			        android:id="@+id/inapp_check"
+		    	    android:layout_width="0dp"
+			    	android:layout_height="fill_parent" 
+			    	android:layout_weight="302"
+			    	android:background="@drawable/point_pop_btn"/>
+			    <View 
+		    	    android:layout_width="0dp"
+			    	android:layout_height="fill_parent" 
+			    	android:layout_weight="105" />
+		    </LinearLayout>
+		    <View 
+	    	    android:layout_width="fill_parent"
+		    	android:layout_height="0dp" 
+		    	android:layout_weight="46" />
+       </LinearLayout>
+       <View 
+        android:layout_weight="440"
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"/>
+    </LinearLayout>
+    <View 
+        android:layout_weight="103"
+        android:layout_width="0dp"
+    	android:layout_height="fill_parent"/>
+</LinearLayout>

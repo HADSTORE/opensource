@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="5"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="70"
+    	android:orientation="horizontal">
+        <TextView
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="5" />
+        <ImageView
+            android:id="@+id/noti_icon"
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="70" />
+        <TextView
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="5" />
+        <LinearLayout 
+            android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="395"
+    		android:orientation="vertical">
+            <TextView 
+                android:id="@+id/noti_title"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="35"
+		    	android:gravity="center_vertical"
+		    	android:text="apptitle"/>
+            <ProgressBar 
+                android:id="@+id/noit_progress"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="15"
+		    	android:progressDrawable="@android:drawable/progress_horizontal"
+		    	android:indeterminate="false"
+		    	android:indeterminateOnly="false"/>
+            <TextView 
+                android:id="@+id/noti_date"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="30"
+		    	android:gravity="center_vertical|right"
+		    	android:text="2013.06.05"/>
+        </LinearLayout>
+        <TextView
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="5" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="5" />
+</LinearLayout>

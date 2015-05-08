@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    <View 
+        android:layout_weight="10"
+        android:layout_width="0dp"
+    	android:layout_height="fill_parent" />
+    <LinearLayout
+       	android:layout_weight="460"
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical">
+	    <View
+	        android:layout_weight="15"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <TextView 
+	        android:layout_weight="60"
+	        android:text="일반 회원 가입"
+	        android:textColor="#cb3333"
+	        android:gravity="center_vertical"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp" />
+	    <View
+	        android:layout_weight="1"
+	        android:background="#aabebebe"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <View
+	        android:layout_weight="10"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <ScrollView 
+	        android:layout_weight="200"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:background="@drawable/search_bar_back">
+	        <TextView 
+	            android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/register_terms_1" />
+	    </ScrollView>
+	    <View
+	        android:layout_weight="15"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <ScrollView 
+	        android:layout_weight="200"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:background="@drawable/search_bar_back">
+	         <TextView 
+	            android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:textSize="8sp"
+    			android:text="@string/register_terms_2" />
+	    </ScrollView>
+	    <View
+	        android:layout_weight="15"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <CheckBox
+             android:id="@+id/option_free"
+             android:textColor="#ff0000"
+             android:text="   회원가입약관과 개인정보 취급방침을 읽었으며 내용에 동의 합니다."
+             android:textSize="8sp"
+             android:gravity="center|left"
+             android:layout_width="fill_parent"
+			 android:layout_height="0dp"
+			 android:layout_weight="70" />
+	    <View
+	        android:layout_weight="15"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	    <Button
+	        android:id="@+id/terms_agree"
+	        android:layout_weight="60"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"
+    		android:text="확인"
+    		android:textColor="#ffffffff"
+    		android:textSize="15sp"
+    		android:gravity="center"
+    		android:background="#cb3333"
+	        />
+	    <View
+	        android:layout_weight="63"
+        	android:layout_width="fill_parent"
+    		android:layout_height="0dp"  />
+	</LinearLayout>
+	<View 
+	    android:layout_weight="10"
+        android:layout_width="0dp"
+    	android:layout_height="fill_parent" />
+</LinearLayout>

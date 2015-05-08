@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="WindowTitlebarBackground">
+	    <item name="android:background">@drawable/custom_titlebar</item>
+	</style>
+	<style
+		name="Theme_Dialog_noBack">
+		<item
+			name="android:windowFrame">@null</item>
+		<item
+			name="android:windowNoTitle">true</item>
+		<item
+			name="android:windowBackground">@color/transparent</item>
+		<item
+			name="android:windowIsFloating">true</item>
+		<item
+			name="android:windowContentOverlay">@null</item>
+		<item
+			name="android:colorBackgroundCacheHint">@null</item>
+		<item
+			name="android:windowIsTranslucent">true</item>
+	</style>
+	<style name="fullScreenTranslucent" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+	</style>
+</resources>

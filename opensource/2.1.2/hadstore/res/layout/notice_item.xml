@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="132px"
+    android:orientation="vertical" >
+    <View 
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="32"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="68"
+    	android:orientation="horizontal">
+        <View
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="10" />
+        <TextView
+            android:id="@+id/notice_num"
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="110"
+    		android:gravity="center"
+    		android:textColor="#cb3333"
+    		android:text="1000"/>
+        <LinearLayout 
+            android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="510"
+    		android:orientation="vertical">
+            <TextView 
+                android:id="@+id/notice_title"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="1"
+		    	android:gravity="center_vertical"
+		    	android:singleLine="true"
+		    	android:textColor="#4d4d4d"
+		    	android:text="apptitle"/>
+            <TextView 
+                android:id="@+id/notice_date"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight="1"
+		    	android:gravity="center_vertical"
+		    	android:textColor="#5d5d5d"
+		    	android:text="2013.06.05"/>
+        </LinearLayout>
+        <View
+        	android:layout_width="0dp"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="10" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="32" />
+</LinearLayout>

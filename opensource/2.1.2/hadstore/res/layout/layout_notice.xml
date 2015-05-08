@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="40"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="93"
+        android:background="@drawable/notice_title"
+        />
+	<ListView
+        android:id="@+id/notice_list_listview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:background="#ffffff"
+	    android:scrollbars="none"
+	   	android:fadingEdgeLength="0dip"
+	   	android:listSelector="@drawable/empty"
+	   	android:cacheColorHint="#00000000"
+	   	android:divider="#FFDCDCDC"
+	    android:layout_weight="664" />
+	<TextView
+  		android:id="@+id/notice_next_search"
+        android:layout_weight="72"
+        android:layout_height="0dp"
+    	android:layout_width="fill_parent"
+    	android:background="#c7c7c7"
+    	android:textColor="#4D4D4D"
+    	android:gravity="center"
+    	android:text="Next +10"
+    	 />
+</LinearLayout>
